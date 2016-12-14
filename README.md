@@ -1,5 +1,4 @@
-<snippet>
-  <content><![CDATA[
+
 # ${1:NFNTO}
 
 A website
@@ -16,6 +15,3 @@ Go nuts!
 
 `git checkout -b this-cool-stuff`
 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
