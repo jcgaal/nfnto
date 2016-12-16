@@ -6,6 +6,8 @@ app.get('title'); // "My Site"
 
 app.set('view engine', 'pug')
 
+app.use(express.static('public')) // To serve static files
+
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there, welcome to nfnto!' })
 })
