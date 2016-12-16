@@ -1,8 +1,13 @@
 var express = require('express')
 var app = express()
 
+app.set('title', 'NFNTO');
+app.get('title'); // "My Site"
+
+app.set('view engine', 'pug')
+
 app.get('/', function (req, res) {
-  res.send('nfnto 2016')
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
 })
 
 app.get('/about', function (req, res) {
