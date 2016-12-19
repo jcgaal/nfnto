@@ -16,21 +16,21 @@
   font-style: normal;
 }
 @font-face {
-	font-family: 'Conv_neutratext_demialt';
-  src: url('../fonts/neutratext_demialt/neutratext_demialt.woff2') format('woff2'),
-       url('../fonts/neutratext_demialt/neutratext_demialt.woff') format('woff');
+	font-family: 'neutra';
+  src: url('../fonts/neutra/neutra-regular.woff2') format('woff2'),
+       url('../fonts/neutra/neutra-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Conv_neutratexttf_boldalt';
-  src: url('../fonts/neutratexttf_boldalt/neutratexttf_boldalt.woff2') format('woff2'),
-       url('../fonts/neutratexttf_boldalt/neutratexttf_boldalt.woff') format('woff');
+	font-family: 'neutra-bold';
+  src: url('../fonts/neutra/neutra-bold.woff2') format('woff2'),
+       url('../fonts/neutra/neutra-bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 html, body{
-  font: 24px/1.7 "Conv_neutratext_demialt", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  font: 24px/1.7 "neutra", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   height: 100%;
   background-color: #eee;
   box-sizing: border-box;
@@ -99,6 +99,7 @@ p {
   float: left;
 }
 .nav {
+  font: 24px/1.7 "neutra-bold", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   padding: 1em 0;
   margin-bottom: 0;
   list-style: none;
@@ -123,6 +124,7 @@ p {
 }
 .intro h1 {
   font-size: 4em;
+  line-height: 1;
   margin: 0.6em 0 0 0;
 }
 .ineed {
@@ -255,8 +257,8 @@ div.cs-skin-underline > span {
   text-align: center;
 }
 div.cs-skin-underline > span::after {
-  font-family: #helvetica;
   content: "+";
+  font-size: 2em;
   right: 0.25em;
   -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
   transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
@@ -310,8 +312,8 @@ div.cs-skin-underline ul span::before {
   transition: transform 0.3s;
 }
 .cs-select .cs-selected span::after {
-  font-family: #helvetica;
   content: "+";
+  font-size:2em;
   opacity: 1;
   -webkit-transition: opacity 0.3s 0.7s;
   transition: opacity 0.3s 0.7s;
