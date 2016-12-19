@@ -1,3 +1,378 @@
-body{
-  background-color:#eee;
+/*
+*Fonts
+*/
+@font-face {
+  font-family: 'quicksandbold';
+  src: url('../fonts/quicksand/quicksand-bold-webfont.woff2') format('woff2'),
+       url('../fonts/quicksand/quicksand-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('../fonts/quicksand/quicksand-regular-webfont.woff2') format('woff2'),
+       url('../fonts/quicksand/quicksand-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_neutratext_demialt';
+  src: url('../fonts/neutratext_demialt/neutratext_demialt.woff2') format('woff2'),
+       url('../fonts/neutratext_demialt/neutratext_demialt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_neutratexttf_boldalt';
+  src: url('../fonts/neutratexttf_boldalt/neutratexttf_boldalt.woff2') format('woff2'),
+       url('../fonts/neutratexttf_boldalt/neutratexttf_boldalt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body{
+  font: 24px/1.7 "Conv_neutratext_demialt", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  height: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  line-height: 1.42857143;
+}
+::selection {
+  background: #C98384;
+}
+a {
+  text-decoration: none;
+  color: #777777;
+}
+p {
+  font-size: 1em;
+  margin: 1em 0;
+}
+@media (min-width: 30em) {
+  .row { width: 100%; display: table; table-layout: fixed; }
+  .col { display: table-cell; }
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.logo {
+  width: 80px;
+}
+.logo-bottom {
+  fill: #6A2F31;
+}
+.logo-left {
+  fill: #E3BFBF;
+}
+.logo-right {
+  fill: #C98384;
+}
+.logo-center {
+    fill: #B7585A;
+}
+.masthead {
+  margin-bottom: 0;
+  font-size: 1.2em;
+  color: #777;
+  padding: 0px 2em 0 2em;
+  text-align: right;
+}
+.masthead-title {
+  float: left;
+}
+.nav {
+  padding: 1em 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav li a {
+  color: #222222;
+  text-decoration: none;
+}
+/*
+* CS Selected
+*/
+.home {
+  padding-bottom: 97px;
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  overflow: visible;
+}
+.intro h1 {
+  font-size: 4em;
+  margin: 0.6em 0 0 0;
+}
+.ineed {
+  max-width: 595px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.ineed h2 {
+  display: inline-table;
+  font-size: 2.8em;
+  position: relative;
+  float: left;
+  top: -25px;
+  margin-right: 22px;
+}
+div.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0.6em;
+  text-align: left;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  max-width: 18em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.cs-select:focus {
+  outline: none;
+  /* For better accessibility add a style for this in your skin */
+}
+.cs-select select {
+  display: none;
+}
+.cs-select span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cs-select > span {
+  padding-right: 3em;
+}
+.cs-select > span::after {
+  content: '\25BE';
+  right: 1em;
+}
+.cs-select ul li:hover {
+  color: #f5f5f5;
+  background-color: red;
+}
+.cs-select span::after,
+.cs-selected span::after {
+  content: '\2713';
+  margin-left: 1em;
+}
+.cs-select.cs-active > span::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.cs-select .cs-options {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  visibility: hidden;
+}
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+}
+.cs-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.cs-select ul span {
+  padding: 1em;
+}
+.cs-select ul li.cs-focus span {
+  background-color: #ddd;
+}
+.cs-select ul li.cs-optgroup ul {
+  padding-left: 1em;
+}
+.cs-select ul li.cs-optgroup > span {
+  cursor: default;
+}
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+  speak: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+div.cs-active {
+  z-index: 200;
+}
+/*
+* CS SKIN UNDERLINE
+*/
+div.cs-skin-underline {
+  background: transparent;
+  font-size: 1.8em;
+  display: block;
+}
+@media screen and (max-width: 30em) {
+  div.cs-skin-underline {
+    font-size: 1.2em;
+  }
+}
+div.cs-skin-underline > span {
+  padding: 1em 2em 0em 1em;
+  border-bottom: 3px solid #000;
+  border-color: inherit;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+}
+div.cs-skin-underline > span::after {
+  font-family: #helvetica;
+  content: "+";
+  right: 0.25em;
+  -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
+  transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 45deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+div.cs-skin-underline.cs-active > span::after {
+  -webkit-transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 270deg);
+  transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, 270deg);
+}
+div.cs-skin-underline.cs-active .cs-options {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+div.cs-skin-underline .cs-options {
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+  transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+}
+div.cs-skin-underline ul span {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 66%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 1.2em 0.8em;
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+div.cs-skin-underline ul span::after {
+  content: '';
+  opacity: 0;
+}
+div.cs-skin-underline ul span::before {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: translate3d(200%, 0, 0);
+  transform: translate3d(200%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cs-select .cs-selected span::after {
+  font-family: #helvetica;
+  content: "+";
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.7s;
+  transition: opacity 0.3s 0.7s;
+}
+.cs-skin-underline.cs-active ul span,
+.cs-skin-underline.cs-active ul span::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.cs-skin-underline li:nth-child(5) span,
+.cs-skin-underline li:nth-child(5) span::before,
+.cs-skin-underline.cs-active li:first-child span,
+.cs-skin-underline.cs-active li:first-child span::before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.cs-skin-underline li:nth-child(4) span,
+.cs-skin-underline li:nth-child(4) span::before,
+.cs-skin-underline.cs-active li:nth-child(2) span,
+.cs-skin-underline.cs-active li:nth-child(2) span::before {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+.cs-skin-underline li:nth-child(3) span,
+.cs-skin-underline li:nth-child(3) span::before {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.cs-skin-underline li:nth-child(2) span,
+.cs-skin-underline li:nth-child(2) span::before,
+.cs-skin-underline.cs-active li:nth-child(4) span,
+.cs-skin-underline.cs-active li:nth-child(4) span::before {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+.cs-skin-underline li:first-child span,
+.cs-skin-underline li:first-child span::before,
+.cs-skin-underline.cs-active li:nth-child(5) span,
+.cs-skin-underline.cs-active li:nth-child(5) span::before {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* more items require more delay declarations */
+.cs-skin-underline .cs-options li span:hover,
+.cs-skin-underline .cs-options li.cs-focus span,
+.cs-skin-underline li.cs-selected span {
+  color: #f5f5f5;
+  background: transparent;
+}
+
+/*
+* Footer
+*/
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #eeeeee;
+}
+footer p{
+  font-size: 0.8em;
 }

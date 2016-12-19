@@ -1,0 +1,23 @@
+- var today = new Date();
+- var year = today.getFullYear();
+footer.row
+  .col
+    p.text-left nfnto&copy; #{year}
+  .col.text-right
+    ul.list-inline
+      li
+        a(href='/contact/')
+          i.fa.fa-envelope(aria-hidden="true")
+      li
+        a(href='https://twitter.com/nfnto' target='_blank')
+          i.fa.fa-twitter(aria-hidden="true")
+      li
+        a(href='https://www.facebook.com/nfnto/' target='_blank')
+          i.fa.fa-facebook(aria-hidden="true")
+      li
+        a(href='http://blog.nfnto.com/' target='_blank')
+          i.fa.fa-tumblr(aria-hidden="true")
+
+block scripts
+
+script(src='/js/nfnto.js')

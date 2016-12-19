@@ -9,7 +9,8 @@ app.set('view engine', 'pug')
 app.use(express.static('public')) // To serve static files
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there, welcome to nfnto!' })
+  //original res.render('index', { title: 'Hey', message: 'Hello there, welcome to nfnto!' })
+  res.render('index')
 })
 
 app.get('/about', function (req, res) {

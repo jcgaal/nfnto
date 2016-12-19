@@ -1,6 +1,28 @@
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/css/nfnto.css')
-  body
-    h1= message
+extends layout.pug
+
+block title
+  - var title = "NFNTO - Badass Digital Consultants";
+  - var description = "Digital Marketing & Communication Agency";
+  - var url = "http://nfnto.com";
+
+  include meta.pug
+
+block content
+  section.intro.text-center
+    h1 Discover &amp; grow
+    p What do you need?
+    section.ineed
+      h2 I need
+      select#selectNeed.cs-select.cs-skin-underline(onchange='changeFunc();')
+        option(value='', disabled='', selected='') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        option(value='1') More customers
+        option(value='2') A website
+        option(value='3') An app
+        // option value="4">A better image</option
+        option(value='5') A better strategy
+    // /container
+    #transit
+
+block scripts
+  script(src='/js/classie.js')
+  script(src='/js/selectFx.js')

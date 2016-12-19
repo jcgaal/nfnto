@@ -1,0 +1,50 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width,minimum-scale=1')
+    meta(name='mobile-web-app-capable' content='yes')
+    meta(name='application-name' content= title)
+    link(rel='icon' sizes='192x192' href='/img/touch/chrome-touch-icon-192x192.png')
+
+    block title
+
+
+    link(rel='stylesheet', href='/css/nfnto.css')
+
+    //G Analytics
+    script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-87805815-1', 'auto');
+            ga('send', 'pageview');
+
+  body
+
+  header.masthead
+    .masthead-title
+      a.masthead-title(href='/')
+        svg#Layer_1.logo(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 183.604 160.238', enable-background='new 0 0 183.604 160.238', xml:space='preserve')
+          polygon.logo-bottom(points='12.723,160.238 39.25,160.238 169.841,160.238 183.604,136.752 52.375,136.752 90.021,69.677 77.178,47.771 ')
+          polygon.logo-left(points='78.859,0 0,136.232 12.723,160.238 78.859,44.971 119.29,112.208 142.392,112.269 ')
+          polygon.logo-right(points='144.059,115.213 78.859,0 105.385,0 183.604,136.752 54.973,136.752 67.576,115.228 ')
+          polygon.logo-center(points='91.73,72.995 69.557,112.227 115.077,112.227 ')
+    ul.nav
+      li
+        a(href='/about/') about
+      li
+        a(href='/solutions/') solutions
+      li
+        a(href='/work/') work
+      li
+        a(href='/contact/') contact
+      li
+        a(href='/news/') news
+
+  .container
+      block content
+
+  include footer.pug
