@@ -10,7 +10,8 @@ app.use(express.static('public')) // To serve static files
 
 app.get('/', function (req, res) {
   //original res.render('index', { title: 'Hey', message: 'Hello there, welcome to nfnto!' })
-  res.render('index')
+  //res.render('index')
+  res.send('nfnto')
 })
 
 app.get('/about', function (req, res) {
