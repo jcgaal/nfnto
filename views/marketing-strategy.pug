@@ -1,0 +1,238 @@
+extends layout.pug
+
+block title
+  - var title = "Marketing Strategy with NFNTO";
+  - var description = "We can earn a special place in people's lives for your brand by understanding what customers expect beyond focus groups & with measurable results.";
+  - var url = "http://nfnto.com/solutions/marketing-strategy";
+
+  include meta.pug
+
+block content
+  .content
+    .row.text-left.strategy
+      .col
+        h1.quicksand Marketing Strategy
+        p.sub
+          | & the subtleties
+        p.size-2x
+          | Today's marketing landscape requires more than a good copy and graphics; brands have a duty to earn a special place in people's lives.
+        p
+          | We can achieve that place for your brand by understanding what customers expect beyond the focus groups. We deliver utilites, services, and most importantly experiences that:&nbsp;
+          small
+            | (Don't feel like reading? click:&nbsp;
+            a(href='#ourprocess') tl;dr
+            | )
+        h2.subtitle The Context
+        .embed-responsive.slideshare-left
+          iframe(src='//www.slideshare.net/slideshow/embed_code/key/D0N5V1PjTsIasR', width='595', height='485', frameborder='0', marginwidth='0', marginheight='0', scrolling='no', style='border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;', allowfullscreen='')
+          div(style='margin-bottom:5px')
+            small
+              strong
+                a(href='//www.slideshare.net/kleinerperkins/2016-internet-trends-report', title='2016 Internet Trends Report', target='_blank')
+                  | 2016 Internet Trends Report&nbsp;
+                | from&nbsp;
+              strong
+                a(target='_blank', href='//www.slideshare.net/kleinerperkins') Kleiner Perkins Caufield & Byers
+        p
+          | According to Mary Meeker's
+          a(href='http://www.kpcb.com/blog/2016-internet-trends-report', target='_blank') 2016 Internet Trends Report
+          | , almost half of the world's population (42%) have access to an internet connection.
+        p
+          | It is then, safe to assume that your audience and customers are already considered in this trend and far more embedded than you probably think. It is only a matter of years for the entire world's population to be connected to the internet in some form or another, and that my friend, means we have to get with the program.
+        h2.subtitle Mobile Ate the World
+        p
+          | Marc Andreesen's 2011 favorite posit: "
+          a(href='http://www.wsj.com/articles/SB10001424053111903480904576512250915629460', target='_blank') Why Software Is Eating The World
+          | " has become an old adage for the mobile world just 4 years after it was foreseen. We are no longer expecting it to happen. It happened already: Mobile ate the world.
+        p
+          | This unprecedented adoptance of technology has been made possible by the introduction of the low-cost & highly effective pocket computers known as smartphones (we totally believe they should be called PoCus, tho.. hocus pocus?).
+        p
+          | The staggering increment in mobile usage for the first time surpassed desktop page views during the second semester of 2016&nbsp;
+          small
+            | (
+            a(href='http://qz.com/825014/mobile-website-views-surpassed-desktop-views-for-the-first-time-ever-in-october-2016/', target='_blank') source
+            | )
+          | :
+        .embed-responsive.embed-responsive-16by9
+          .atlas-chart(data-id='By5YNwIxg', data-width='640', data-height='449')
+            img(src='https://www.theatlas.com/i/atlas_By5YNwIxg.png', style='max-width: 100%;')
+          script(src='https://www.theatlas.com/javascripts/atlas.js')
+        p
+          | So whether you belive "the hype" or not, digital reach & marketing MUST become an integral part of your communications strategy. Right now. And the longer you wait, the more your business will be negatively affected.
+        p
+          | The way you deliver your messages, your value proposition; the way you communicate your values & ideas has taken a shift that has to be carefully analyzed and reworked to suit your newly adapted audiences.
+        h2#ourprocess.subtitle Our Process
+        p
+          | We understand that your business is unique, however when it comes to understanding, communicating and effectively reaching your audience, we devised a basic process to successfully apply each solution that comes along through the landscape into any vertical & align it to the core of the business.
+        p
+          | It boils down to 5 main pilars:
+        #tabs.c-tabs
+          .c-tabs-nav
+            a.c-tabs-nav__link.is-active
+              | &#x269B;
+              span Research
+            a.c-tabs-nav__link
+              | &#x2609;
+              span Opportunities
+            a.c-tabs-nav__link
+              | &#x2691;
+              span Objectives
+            a.c-tabs-nav__link
+              | &#x2697;
+              span Scope
+            a.c-tabs-nav__link
+              | &#x2607;
+              span Action
+          .c-tab.is-active
+            .c-tab__content
+              h2.subtitle Research
+              p
+                | We must first understand what is going on with your business and the relation with the context in which it exists. We carry out a diagnosis, just like a doctor before giving any prescription, so we are completely certain of the symptoms and define the root causes.
+              p
+                | Here, we will help you answer the following questions:
+                br
+                small (Think of you biz as a sports team)
+              ul
+                li What is the game?
+                li What is the context?
+                li Where are we playing?
+                li Who are the players?
+                li What are the tools?
+          .c-tab
+            .c-tab__content
+              h2.subtitle Opportunities
+              p
+                | With the knowledge gatherered during research we can accurately estimate the diverse opportunites that lay ahead, as well as the calculated risks that come with them.
+                | Understanding where we are and defining how far we can go, through informed estimation will set the base for the next steps.
+              p
+                | The questions here are:
+              ul
+                li What is at stake?
+                li Should we change the game?
+                li How, Why and for What reason?
+                li How far could we go?
+                li What are the tools?
+          .c-tab
+            .c-tab__content
+              h2.subtitle Objectives
+              p
+                | At this point we possess the information ready to divise a concise plan. We have defined how far we are going to go. Now we determine clear & attainable objectives defined in inifitive.
+              p
+                | No longer asking questions; we define the incremental improvements to drive your brand to where you envision it. Small goals towards one big achievement. These are part of a continuous cycle:
+              ul
+                li Dfine actionable goals
+                li Define the time frames
+                li Create measurement strategy
+                li
+                  span Implement
+                li Gather results
+                li Start over
+          .c-tab
+            .c-tab__content
+              h2.subtitle Scope
+              p
+                | Once we have aligned your goals with your target, we proceed to define the required resourses (tools, budgets, teams) need to achieve them .
+              ul
+                li Resource definition & allocation
+                li Actionable short term plans
+          .c-tab
+            .c-tab__content
+              h2.subtitle Action
+              p
+                | The strategy becomes tactics and begins feeding the positive data feedback loop stablished for your results in the right direction.
+              p.text-center
+                | We get to work as a team and go chase those goals.
+                i.fa.fa-bolt
+        h2#ourprocess.subtitle Our Reach
+        p
+          | Our reach goes beyond a lead or a sale. We want to be in business for the next century and we hope our clients are also willing to elongate their permance.
+        p
+          | We recognize the nature of developing both a transactional and emotional relationship with customers.
+          | That is why we have mastered the steps in which opportunity becomes available and harness the audience at the right moment for you.
+
+        h3.text-center
+          | The Customer Journey
+        p.sub.text-center
+          | generating value at every step
+        img(src='/svg/icons/customer-journey.svg', alt='Customer Journey', width='100%')
+
+        p
+          | Let's get your brand wherever it needs to be.
+        h2#ourprocess.subtitle Our Expertise
+        h3.heading Digital Channels
+        p
+          | We work with the companies that will bring you to the eyes & hearts of the audience you are willing to reach. That is why we have partnered with some of the best out there.
+
+        .row
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/google.svg')
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/facebook.svg')
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/instagram-text.svg')
+          .col.h-pad-3.media-comp
+            img(src='/svg/channels/twitter.svg')
+        br
+        .row
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/bing.svg')
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/spotify.svg')
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/doubleclick.svg')
+          .col.h-pad-2.media-comp
+            img(src='/svg/channels/linkedin.svg')
+        p.text-center
+          | Most of them you know and have used... but do you truly understand them?
+          br
+          | ...Don't worry, we do.
+        p
+          | Your brand wherever it needs to be, whenever you need it to be.
+
+        h3.heading Customer Managed Relationships
+        p
+          | Do you know who your customers are? What they enjoy? Or at least their demographics?
+        p
+          | These are people we are talking about. With passionate, emotional, rich lives, that go beyond a spectrum. And they are willing to put their trust in you, what will you provide them in return?
+        .row
+          .col-30
+            img(src='/svg/icons/form.svg', width='175')
+          .col-10
+            .clearfix.h-pad-1
+          .col-60
+            p
+              | We can provide this valuable information to you. We can manage those databases and give your customers exactly what they are expecting.
+            p Centralize & leverage that precious information to your customers benefit.
+        h3.heading Measurement & Reporting
+        p Do you know how well your business is doing? Do you understand why?
+        p
+          | In order to improve anything you must first understand its current state, and document every step of the way.
+        .row
+          .col-60
+            p
+              | We can help you define & strategize around your Key Performance Indicators to help you explain the state in which your company was, is and will be in.
+          .col-10
+            .clearfix.h-pad-1
+          .col-30
+            img(src='/svg/icons/monitoring.svg', width='195')
+        p
+          | Together we'll develop the measuring models for your vertical, and then we will align them to your business needs and make sure we keep a tight record of them for critical decision-making purposes.
+        hr
+        p.text-center
+          | Convinced?
+          br
+          a.btn(href='../contact')
+            | Contact us &#x2192;
+
+
+
+block scripts
+  script(src='/js/tabs.js')
+  script.
+    //Marketing Solutions invocation
+    var myTabs = tabs({
+    el: '#tabs',
+    tabNavigationLinks: '.c-tabs-nav__link',
+    tabContentContainers: '.c-tab'
+    });
+    myTabs.init();

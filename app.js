@@ -10,37 +10,40 @@ app.use(express.static('public')) // To serve static files
 
 app.get('/', function (req, res) {
   //original res.render('index', { title: 'Hey', message: 'Hello there, welcome to nfnto!' })
-  //res.render('index')
-  res.send('nfnto')
+  res.render('index')
+  //res.send('nfnto')
 })
 
 app.get('/about', function (req, res) {
-  res.send('about')
+  //res.send('about')
+  res.render('about')
 })
 
 app.get('/solutions', function (req, res) {
-  res.send('solutions')
+  //res.send('solutions')
+  res.render('solutions')
 })
 
 app.get('/solutions/marketing-strategy', function (req, res) {
-  res.send('marketing strategy')
+  //res.send('marketing strategy')
+  res.render('marketing-strategy')
 })
 
 app.get('/solutions/experience-design', function (req, res) {
-  res.send('experience design')
+  res.render('experience-design')
 })
 
 app.get('/work', function (req, res) {
-  res.send('our work')
+  res.render('our-work')
 })
 
 app.get('/contact', function (req, res) {
-  res.send('get in touch')
+  res.render('contact')
 })
 
 //404
 app.use(function (req, res, next) {
-  res.status(404).send('Sorry cant find that!')
+  res.status(404).render('4oh4')
 })
 
 //500

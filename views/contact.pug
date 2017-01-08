@@ -1,0 +1,19 @@
+extends layout.pug
+
+block title
+  - var title = "Contact us";
+  - var description = "We love to hear about new business partnerships and help brands grow beyond what is expected, drop us a line.";
+  - var url = "http://nfnto.com/contact";
+
+  include meta.pug
+
+block content
+  .content
+    .row.text-left.strategy
+      .col.text-center
+        h1.quicksand Get in touch
+        p.sub
+          | let us know how we can help
+        p.size-2x
+          | Shoot us an email&nbsp;
+          a(href='mailto:contact@nfnto.com?subject=Let\'s work together', title='Contact us') contact(at)nfnto.com
