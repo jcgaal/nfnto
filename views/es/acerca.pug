@@ -1,0 +1,79 @@
+extends layout.pug
+
+block title
+  - var title = "About NFNTO";
+  - var description = "NFNTO is an agency where results become accessible, through thorough research and sophisticated marketing implementations we can help you reach your goals ";
+  - var url = "http://nfnto.com/about";
+
+  include meta.pug
+
+block content
+  .content
+    .row
+      h1.quicksand.text-center
+        | What can we do for you?
+      p.sub.text-center
+        | we're thrilled to know
+      p.text-center
+        | Today's marketing landscape requires more than a good copy and graphics; brands have a duty to earn a special place in people's lives.
+      p.text-center
+        | We can achieve that place for your brand by understanding what customers expect beyond the focus groups. We deliver utilites, services, and most importantly experiences that:
+      br
+      .row.text-left
+        .col
+          h3.text-center Scientifically define & reach your goals
+          ul.experiences
+            li Leverage data with precision & purpose
+            li Confront unlimited choice with limited resources
+            li Target the right person at the right time and in the right context
+            li Unify the consumer experience across fragmented media
+        .col
+          h3.text-center Emotionally attach you brand to the world
+          ul.experiences
+            li Achieve creative elasticity that allows both personalization and scale
+            li Remain relevant and in sync with culture in real time
+            li Deliver a measurable marketing ROI based on the metrics that matter
+      // /.row
+      // /col-100
+      hr
+      br
+    .row.text-center.strategy
+      .col
+        h1.quicksand.text-center Your digital starategic partner
+        p.sub.text-center
+          | a little bit about us
+        p
+          | We are a group of professionals that have been in your shoes for nearly two decades. We know the diffulties of running a marketing department, we know how difficult reaching those goals might seem, and we would have loved to find someone to help solve those difficulties and bask in the great times with us after achieving a goal.
+          br
+          span.quicksand-bold But we are here, now. For you.
+        p#audioModem.modem(onmouseover='playclip();', onclick='playclip();')
+          | Our favorite melody is the sound modems used to make while connecting to the internet
+        audio#beep-one(controls='controls', preload='auto')
+          source(src='/audio/modem.mp3')
+          source(src='/audio/modem.ogg')
+          | Your browser isn't invited for super fun time.
+        .row.text-center
+          .col
+            p
+              | We've been around since
+              span.quicksand AOL
+              |  was giving those pesky free internet CD's.
+          .col
+            p
+              | We actually had&nbsp;
+              a(href='https://en.wikipedia.org/wiki/Friendster', target='_blank') friendster
+              |  and&nbsp;
+              a(href='https://del.icio.us/', target='_blank') del.icio.us
+              |  accounts... for fun!
+        // /.row
+        p
+          | But most importantly, we understand the depth and impact that all the digital tools out there can have in a person's life. And together we can leverage them to align with your business goals.
+
+        p
+          | Ready to know more?
+          br
+
+          a.btn(href='/solutions')
+            | Check out our solutions &#x2192;
+            i.fa.fa-arrow-right(aria-hidden='true')
+        // /col-100
