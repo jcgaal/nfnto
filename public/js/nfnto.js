@@ -40,6 +40,27 @@ function reply_click(clicked_id){
       }, 0);
       return true;
       break;
+    case "10":
+      document.getElementById("transit").className = "shown slide";
+      setTimeout(function () {
+        window.location="/es/soluciones/estrategia-de-marketing";
+      }, 0);
+      return true;
+      break;
+    case "20":
+      document.getElementById("transit").className = "shown slide";
+      setTimeout(function () {
+        window.location="/es/soluciones/experiencia-de-usuario";
+      }, 0);
+      return true;
+      break;
+    case "50":
+      document.getElementById("transit").className = "shown slide";
+      setTimeout(function () {
+        window.location="/es/soluciones/estrategia-de-marketing";
+      }, 0);
+      return true;
+      break;
     default:
   }
 }
