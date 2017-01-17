@@ -102,6 +102,28 @@ function _changeText() {
 }
 setInterval("_changeText()", 1000);
 
+//Swap Words Dynamically Spanish
+var palabras = ["crecer tu negocio","llegar a tus clientes", "deleitar a tus usuarios", "aumentar ventas", "llegar a tus metas", "incrementar conocimiento de marca"];
+var a = 0;
+var texto = "ayudarán a";
+function _getTextoCambiado() {
+  a = (a + 1) % palabras.length;
+  //console.log(palabras[a]);
+  //console.log(a);
+  return texto.replace(/ayudarán a/, palabras[a]);
+}
+function _cambiaTexto() {
+  var txxt = _getTextoCambiado();
+  //console.log(txt);
+  var elCambiador = document.getElementById("cambiador");
+  //we check if the element theChanger exists
+  if (document.body.contains(elCambiador)){
+    //If it does, we change the text inside it
+    document.getElementById("cambiador").innerHTML = txxt;
+  }
+}
+setInterval("_cambiaTexto()", 1000);
+
 /*! ScrollToAnchor.js v1.1,0 | Paul Browne | 2015 | GNU 2.0  */
 (function() {
   var bod = document.getElementsByTagName("body")[0];

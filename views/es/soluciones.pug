@@ -1,9 +1,10 @@
 extends layout.pug
 
 block title
-  - var title = "Digital Solutions for your business";
-  - var description = "We will take your brand right where your customers are & anytime they need your products or services.";
-  - var url = "http://nfnto.com/solutions";
+  - var title       = "Soluciones Digitales para tu negocio";
+  - var description = "Llevemos tu marca a donde están tus clientes justo al momento que requieran tu producto o servicio.";
+  - var url         = "http://nfnto.com/es/soluciones";
+  - var urlen       = "http://nfnto.com/solutions";
 
   include meta.pug
 
@@ -11,15 +12,15 @@ block content
   .content
     .row
       h1.quicksand.text-center.special-title
-        | Our solutions will help <span class="you">you</span>:<br> <span id="changer" class="quicksand-bold">get there</span>
+        | Nuestras soluciones <span class="you">te</span>:<br> <span id="cambiador" class="quicksand-bold">ayudarán a</span>
       p.sub.text-center
-        | we are convinced
+        | estamos convencidos
       p.text-center
-        | We like to keep it simple. Straight-forward solutions that will supercharge your brand.
+        | Nos gusta mantenerlo sencillo. Soluciones directas que sobrealimentarán su marca.
       p.text-center
-        | No fancy talk & no bs. Real solutions.
+        | Sin conversaciones rebuscadas, no más &#x1f4a9;
       p.text-center
-        | You need more leads? We'll get them, Need to index your website? we got you. Need to run those reports through an actuary in Dubai? Alright, I guess we can do that...
+        | ¿Necesita más leads? Te los traemos, ¿Necesita indexar su sitio web? sabemos cómo. ¿Necesitas pasar esos informes por un actuario en Dubai? Supongo que podemos hacer que suceda...
       p.text-center
         a(href='#solutions', class='btn') &#x2193;
       hr
@@ -28,12 +29,12 @@ block content
     .row.text-center.strategy#solutions
       .col
         p.text-center
-          | Our solutions are based on proven strategies that shape every step we take.
+          | Nuestras soluciones se basan en estrategias probadas que dan forma con cada paso que tomamos.
     // /.row
     .row#solutions
       .col.solutions.marketing-block
-        a(href='marketing-strategy')
-          h3.text-center Marketing Strategy
+        a(href='estrategia-de-marketing/')
+          h3.text-center Estrategia de Marketing
           svg#MarketingStrategy.solutions-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='499px', height='500px', viewbox='0 0 499 500', enable-background='new 0 0 499 500', xml:space='preserve')
             g#borderm
               path(d='M489,10v480H10V10H489 M499,0H0v500h499V0L499,0z')
@@ -212,8 +213,8 @@ block content
 
       .col.solutions.safe-block
       .col.solutions.experience-block
-        a(href='experience-design')
-          h3.text-center Experience Design
+        a(href='experiencia-de-usuario')
+          h3.text-center Diseño de Experiencias
           svg#ExperienceStrategy.solutions-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='499px', height='500px', viewbox='0 0 499 500', enable-background='new 0 0 499 500', xml:space='preserve')
             g#borderx
               path(d='M489,10v481H9V10H489 M499,0H-1v501h500V0L499,0z')

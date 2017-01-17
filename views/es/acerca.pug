@@ -1,9 +1,10 @@
 extends layout.pug
 
 block title
-  - var title = "About NFNTO";
-  - var description = "NFNTO is an agency where results become accessible, through thorough research and sophisticated marketing implementations we can help you reach your goals ";
-  - var url = "http://nfnto.com/about";
+  - var title       = "Acerca de NFNTO";
+  - var description = "NFNTO es una agencia donde los resultados son accesibles, a través de investigación exhaustiva y sofisticadas implementaciones de marketing con las cuales lograrás alcanzar tus metas";
+  - var url         = "http://nfnto.com/es/acerca";
+  - var urlen       = "http://nfnto.com/about";
 
   include meta.pug
 
@@ -11,69 +12,69 @@ block content
   .content
     .row
       h1.quicksand.text-center
-        | What can we do for you?
+        | ¿Qué podemos hacer por tu marca?
       p.sub.text-center
-        | we're thrilled to know
+        | conoce más
       p.text-center
-        | Today's marketing landscape requires more than a good copy and graphics; brands have a duty to earn a special place in people's lives.
+        | El ecosistema del marketing hoy en día demanda más que buenos gráficos y copy decente; las marcas ahora deben ganarse un lugar especial en las vidas de las personas.
       p.text-center
-        | We can achieve that place for your brand by understanding what customers expect beyond the focus groups. We deliver utilites, services, and most importantly experiences that:
+        | Nosotros podemos lograr ese lugar para tu marca a través del entendimiento de lo que los clientes esperan, más allá de lo que los grupos de enfoque te puedan brindar. Nosotros nos encargamos de crear utilidades, servicios y experiencias que:
       br
       .row.text-left
         .col
-          h3.text-center Scientifically define & reach your goals
+          h3.text-center Científicamente definen y nos hacen alcanzar tus metas
           ul.experiences
-            li Leverage data with precision & purpose
-            li Confront unlimited choice with limited resources
-            li Target the right person at the right time and in the right context
-            li Unify the consumer experience across fragmented media
+            li Aprovechar los datos con precisión y propósito
+            li Confrontar opciones ilimitadas con recursos limitados
+            li Llegar a la persona adecuada en el momento adecuado y en el contexto adecuado
+            li Unificar la experiencia del consumidor a través de los medios fragmentados
         .col
-          h3.text-center Emotionally attach you brand to the world
+          h3.text-center Atan emocionalmente a tu branda con el mundo
           ul.experiences
-            li Achieve creative elasticity that allows both personalization and scale
-            li Remain relevant and in sync with culture in real time
-            li Deliver a measurable marketing ROI based on the metrics that matter
+            li Lograr una elasticidad creativa que permita tanto la personalización como la escala
+            li Permanecer relevante y en sintonía con la cultura en tiempo real
+            li Entregar un ROI medible de marketing basado en las métricas que importan y enganchan
       // /.row
       // /col-100
       hr
       br
     .row.text-center.strategy
       .col
-        h1.quicksand.text-center Your digital starategic partner
+        h1.quicksand.text-center Tu socio estratégico digital
         p.sub.text-center
-          | a little bit about us
+          | un poco acerca de nosotros
         p
-          | We are a group of professionals that have been in your shoes for nearly two decades. We know the diffulties of running a marketing department, we know how difficult reaching those goals might seem, and we would have loved to find someone to help solve those difficulties and bask in the great times with us after achieving a goal.
+          | Somos un grupo de profesionales que han estado en tus zapatos durante casi dos décadas. Conocemos las dificultades de administrar un departamento de marketing, sabemos lo difícil que puede ser alcanzar esos objetivos y nos hubiera gustado encontrar a alguien que ayudara a resolver esas dificultades y disfrutar de los grandes momentos con nosotros después de alcanzar un objetivo.
           br
-          span.quicksand-bold But we are here, now. For you.
+          span.quicksand-bold Pero estamos aquí, ahora. Para ti.
         p#audioModem.modem(onmouseover='playclip();', onclick='playclip();')
-          | Our favorite melody is the sound modems used to make while connecting to the internet
+          | Nuestra melodía favorita son los sonidos de módems antiguamente usados para conectarse a Internet
         audio#beep-one(controls='controls', preload='auto')
           source(src='/audio/modem.mp3')
           source(src='/audio/modem.ogg')
-          | Your browser isn't invited for super fun time.
+          | Su navegador no está invitado para esta experiencia súper divertida.
         .row.text-center
           .col
             p
-              | We've been around since
+              | Hemos estado desde que
               span.quicksand AOL
-              |  was giving those pesky free internet CD's.
+              |  regalaba sus discos de internet gratis en cada tienda.
           .col
             p
-              | We actually had&nbsp;
+              | Realmente teníamos cuentas de&nbsp;
               a(href='https://en.wikipedia.org/wiki/Friendster', target='_blank') friendster
-              |  and&nbsp;
+              |  y&nbsp;
               a(href='https://del.icio.us/', target='_blank') del.icio.us
-              |  accounts... for fun!
+              |  por gusto y diversión...
         // /.row
         p
-          | But most importantly, we understand the depth and impact that all the digital tools out there can have in a person's life. And together we can leverage them to align with your business goals.
+          | Pero lo más importante es que entendemos la profundidad y el impacto que todas las herramientas digitales pueden tener en la vida de una persona. Y juntos podemos aprovecharlos para alinearnos con tus objetivos de negocio y traducirlos a resultados medibles.
 
         p
-          | Ready to know more?
+          | ¿Listo para saber más?
           br
 
           a.btn(href='/solutions')
-            | Check out our solutions &#x2192;
+            | Ve nuestras soluciones &#x2192;
             i.fa.fa-arrow-right(aria-hidden='true')
         // /col-100
