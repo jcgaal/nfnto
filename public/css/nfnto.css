@@ -1423,6 +1423,12 @@ div.cs-skin-underline ul span::before {
   }
 }
 /*
+* Contact Page
+*/
+.col.location {
+  padding: 35px;
+}
+/*
 * Footer
 */
 .footer {

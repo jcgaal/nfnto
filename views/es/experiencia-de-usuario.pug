@@ -1,9 +1,10 @@
 extends layout.pug
 
 block title
-  - var title = "Experience Design with NFNTO";
-  - var description = "We can earn a special place in people's lives for your brand by understanding what customers expect beyond focus groups & with measurable results.";
-  - var url = "http://nfnto.com/solutions/marketing-strategy";
+  - var title       = "Experience de Usuario con NFNTO";
+  - var description = "Podemos ganar un lugar especial en la vida de las personas para tu marca entendiendo lo que esperan de ella, más allá de los grupos de enfoque y con resultados mensurables.";
+  - var url         = "http://nfnto.com/es/soluciones/experiencia-de-usuario";
+  - var urlen       = "http://nfnto.com/solutions/experience-design";
 
   include meta.pug
 
@@ -11,54 +12,61 @@ block content
   .content
     .row.text-left.strategy
       .col
-        h1.quicksand Experience Strategy
+        h1.quicksand Estrategia de Experiencias
         p.sub
-          | & simplifying the complex
+          | & simplificando lo complejo
         p.size-2x
-          | Does design even matter?
+          | Realmente importa el diseño?
         p
-          | Design is more than looking good. Design has to be functional while making an emotional connection between the brand, the product and the user.
+          | El diseño es más que verse bien. El diseño tiene que ser funcional mientras se hace una conexión emocional entre la marca, el producto y el usuario.
         p
-          | Experience is the knowledge or mastery of an event or subject gained through involvement in or exposure to it. Terms in philosophy, such as "empirical knowledge" or "a posteriori knowledge," are used to refer to knowledge based on experience.
+          | La experiencia es el conocimiento o dominio de un evento o tema adquirido a través de la participación o la exposición a ella. Los términos en filosofía, tales como "conocimiento empírico" o "conocimiento a posteriori", se usan para referirse al conocimiento basado en la experiencia.
         p
-          | The history of the word
-          i experience
-          |  aligns it closely with the concept of experiment.
+          | La historia de la palabra
+          i experiencia
+        |  se alinea estrechamente con el concepto de experimento.
         p
-          | Since the turn of the century, people have seen that an experience with technology can actually be easy, productive, and even enrich their lives. And they now realize that it is not, and never was, their fault that they don’t understand how to use a website, online product, computer, remote control, parking meter, GPS, thermostat, you name it. Consumers now realize the responsibility of making something easy to use is on the company making the product or providing the service. In order to stay relevant and competitive, companies are now required to spend the time and money to design and build their products in a user-centered way, for the people actually using it.
-        h2.subtitle What Does UX Mean?
+          | Desde el comienzo de siglo, la gente ha visto que una experiencia con la tecnología en realidad puede ser fácil, productivo, e incluso puede llegar a enriquecer sus vidas. Y ahora se dan cuenta de que no es, y nunca fue tu culpa el saber cómo usar un sitio web, producto en línea, computadora, control remoto, parquímetro, GPS, termostato, o lo que sea. Los consumidores ahora se dan cuenta que la responsabilidad de hacer algo fácil de usar pertenece a la empresa que fabrica el producto o proporciona el servicio. Con el fin de mantenerse relevante y competitivo, las empresas están ahora obligados a dedicar el tiempo y dinero para diseñar y construir sus productos enfocándose en el usuario, enfocándose en las personas que realmente lo utilizan.
+        h2.subtitle ¿Qué significa UX?
         p
-          | The Difference Between UX, UCD, & UI
-          | I often hear people interchanging UX with UI or someone is looking for a UX/UI designer to hire. The important thing to note here is that UI stands for user interface, which is specific to designing software and hardware, while UX is very broad and applies to more than a digital product. While the UI function is very important, it is only one small piece in the UX ecosphere. Below are a few definitions:
-          | User Experience is an approach.
-          | UX is the end-to-end experience a customer has with your company. It includes all of your products, services, and communications, and it is not limited to the interface of a digital product, which is the common misconception. The way you answer your phone is part of a customer’s user experience with your business.
-          | User-centered Design is a method.
-          | UCD is a process that involves end-user input throughout all stages of product development. UCD is an important step towards achieving a successful user experience for your digital product.
-          | User Interface is a control system.
-          | The UI of a product refers to how the end user controls the hardware or software product: the buttons, menus, windows, icons, etc., that allow a person to navigate and interact with a system. The goal for a great user experience is always that these controls are intuitive and easy to use, with little or no training.
+          strong La diferencia entre UX, UCD, & UI
+          br
+          | La gente a menudo confunde UX con UI, regularmente cuando se está buscando a alguien para contratar. Lo importante a destacar aquí es que UI se refiere a la interfaz de usuario, que es específico para el diseño de software y hardware, mientras que UX es muy amplio y se aplica a más de un producto digital. Mientras que la función de interfaz de usuario es muy importante, es sólo una pieza pequeña en la ecosfera UX. A continuación se presentan algunas definiciones:
+          br
+          strong La experiencia del usuario es un enfoque.
+          br
+          | UX es la experiencia de extremo a extremo que un cliente tiene con tu empresa. Incluye todos sus productos, servicios y comunicaciones, y no se limita a la interfaz de un producto digital, que es el error común. La forma en que responde a tu teléfono es parte de la experiencia de usuario de un cliente con tu negocio.
+          br
+          strong Diseño centrado en el usuario es un método.
+          br
+          | UCD es un proceso que involucra la entrada del usuario final a través de todas las etapas del desarrollo del producto. UCD es un paso importante para lograr una experiencia de usuario exitosa para tu producto digital.
+          br
+          strong Diseño de Interfaz de Usuario es un sistema de control.
+          br
+          | La interfaz de usuario de un producto se refiere a cómo el usuario final controla el producto de hardware o software: los botones, menús, ventanas, iconos, etc., que permiten a una persona navegar e interactuar con un sistema. El objetivo de una gran experiencia de usuario es siempre que estos controles son intuitivos y fáciles de usar, con poco o ningún entrenamiento.
         p
-          | The Nielsen Norman Group also talks about the distinction between UX and UI on its website:
-          | It’s important to distinguish the total user experience from the user interface (UI), even though the UI is obviously an extremely important part of the design. As an example, consider a website with movie reviews. Even if the UI for finding a film is perfect, the UX will be poor for a user who wants information about a small independent release if the underlying database only contains movies from the major studios.
+          | El Nielsen Norman Group también habla de la distinción entre UX e UI en tu sitio web:
+          | Es importante distinguir la experiencia total del usuario de la interfaz de usuario (UI), aunque la interfaz de usuario es obviamente una parte muy importante del diseño. Como ejemplo, considere un sitio web con reseñas de películas. Incluso si la interfaz de usuario para encontrar una película es perfecta, el UX será pobre para un usuario que desee información sobre un pequeño lanzamiento independiente si la base de datos subyacente sólo contiene películas de los grandes estudios.
         .embed-responsive.slideshare-left
           img(src='/svg/icons/user-experience.svg', alt='User Experience', width='100%')
         p
-          | Services that now live under the umbrella of user experience typically include product strategy, user research, interaction design, user interface design, visual design, usability testing, front-end development, and increasingly, back-end development. This means the entire product team now lives in the UX world and approaches their work through this UX lens.
+          | Services that now live under the umbrella of user experience typically include product strategy, user research, interaction design, user interface design, visual design, usability testing, front-end development, and increasingly, back-end development. This means the entire product team now lives in the UX world and approaches their work through this UX lens.Los servicios que ahora viven bajo el paraguas de la experiencia del usuario suelen incluir la estrategia del producto, la investigación del usuario, el diseño de la interacción, el diseño de la interfaz de usuario, el diseño visual, las pruebas de usabilidad, el desarrollo front-end y cada vez más, el desarrollo back-end. Esto significa que el equipo completo del producto ahora vive en el mundo UX y se acerca a tu trabajo a través de esta lente UX.
         p
-          | Even the most traditional and conservative businesses are embracing UX. Banks are, in fact, so focused on creating great user experiences for their customers, several are aiming higher to actually revolutionize the entire financial industry through UX. Wow, things have really come a long way! The Spanish Bank BBVA recently acquired a UX firm and stated the following in an issued
+          | Incluso los negocios más tradicionales y conservadores están abrazando UX. De hecho, los bancos están tan concentrados en crear grandes experiencias de usuario para sus clientes, varios están apuntando más alto para realmente revolucionar toda la industria financiera a través de UX. Wow, las cosas han recorrido un largo camino! El Banco Español BBVA adquirió recientemente una firma de UX y declaró lo siguiente en
           a(href='http://www.prnewswire.com/news-releases/bbva-acquires-leading-user-experience-firm-spring-studio-300066312.html', target='_blank') press release
           | :
         p
           blockquote(cite='http://www.prnewswire.com/news-releases/bbva-acquires-leading-user-experience-firm-spring-studio-300066312.html')
             | Human-centered design is key to disruption in the finance industry and BBVA is developing the best end-to-end user experience across all channels.
         p
-          | UX is not just storming the financial industry; healthcare, travel, and even the government are getting onboard. I recently heard the captain of a cruse ship say, “Booking a cruise should be as easy as buying something on Amazon.”
+          | UX no es sólo asalto a la industria financiera; La salud, los viajes y hasta el gobierno se están embarcando. Hace poco oí al capitán de un buque de crus decir: "reservar un crucero debería ser tan fácil como comprar algo en Amazon".
 
         hr
 
-        h3.text-center Every brand is different, and every experience will be unique to suit each customer. Let us guide you through this amazing world of design and together awe your audience
+        h3.text-center Cada marca es diferente, y cada experiencia será única para cada cliente. Permítanos guiarle a través de este increíble mundo del diseño y juntos impresionar a tu público.
 
         p.text-center
-          | Convinced?
+          | ¿Convencido?
           br
-          a.btn(href='../contact')
-            | Contact us &#x2192;
+          a.btn(href='../contacto')
+            | Contáctanos &#x2192;

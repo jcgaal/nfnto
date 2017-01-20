@@ -9,7 +9,7 @@ html
     block title
 
 
-    link(rel='stylesheet', href='/css/nfnto.css')
+    link(rel='stylesheet', href='/css/nfnto.min.css')
 
     //G Analytics
     script.
@@ -31,20 +31,21 @@ html
           polygon.logo-left(points='78.859,0 0,136.232 12.723,160.238 78.859,44.971 119.29,112.208 142.392,112.269 ')
           polygon.logo-right(points='144.059,115.213 78.859,0 105.385,0 183.604,136.752 54.973,136.752 67.576,115.228 ')
           polygon.logo-center(points='91.73,72.995 69.557,112.227 115.077,112.227 ')
-    ul.nav
-      li
-        a(href='/about/') about
-      li
-        a(href='/solutions/') solutions
-      //li
-        a(href='/work/') work
-      li
-        a(href='/contact/') contact
-      li
-        a(href='http://blog.nfnto.com') news
-      li
-        a(href='/es/')
-          img(src='/svg/icons/spanish-alt.svg', width='40', alt='Spanish', title='Spanish', class='lang-flag')
+    nav.navbar
+      ul.nav
+        li
+          a(href='/about/') about
+        li
+          a(href='/solutions/') solutions
+        //li
+          a(href='/work/') work
+        li
+          a(href='/contact/') contact
+        li
+          a(href='http://blog.nfnto.com') news
+        li
+          a(href= urles)
+            img(src='/svg/icons/spanish-alt.svg', width='40', alt='Spanish', title='Spanish', class='lang-flag')
 
   .container
       block content

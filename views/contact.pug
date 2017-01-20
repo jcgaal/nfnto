@@ -1,9 +1,10 @@
 extends layout.pug
 
 block title
-  - var title = "Contact us";
+  - var title       = "Contact us";
   - var description = "We love to hear about new business partnerships and help brands grow beyond what is expected, drop us a line.";
-  - var url = "http://nfnto.com/contact";
+  - var url         = "http://nfnto.com/contact";
+  - var urles       = "http://nfnto.com/es/contacto";
 
   include meta.pug
 
@@ -17,3 +18,17 @@ block content
         p.size-2x
           | Shoot us an email&nbsp;
           a(href='mailto:contact@nfnto.com?subject=Let\'s work together', title='Contact us') contact(at)nfnto.com
+    hr
+    .row
+      .col.text-center
+        h3 Locations
+    .row
+      .col.location
+        img(src='/svg/icons/locations/mexico.svg', alt='Ciudad de México, México', width='100%')
+        p.text-center Mexico City
+      .col.location
+        img(src='/svg/icons/locations/san-francisco.svg', alt='San Francisco, California', width='100%')
+        p.text-center San Francisco
+      .col.location
+        img(src='/svg/icons/locations/barcelona.svg', alt='Barcelona, España', width='100%')
+        p.text-center Barcelona

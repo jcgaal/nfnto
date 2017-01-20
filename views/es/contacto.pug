@@ -1,9 +1,10 @@
 extends layout.pug
 
 block title
-  - var title = "Contáctanos";
-  - var description = "We love to hear about new business partnerships and help brands grow beyond what is expected, drop us a line.";
-  - var url = "http://nfnto.com/contact";
+  - var title       = "Contáctanos";
+  - var description = "Nos encanta escuchar nuevas ideas y visiones de negocios y ayudar a las marcas a crecer más allá de lo que se espera, envíanos un mensaje";
+  - var url         = "http://nfnto.com/es/contacto";
+  - var urlen       = "http://nfnto.com/contact";
 
   include meta.pug
 
@@ -13,7 +14,21 @@ block content
       .col.text-center
         h1.quicksand Mándanos un mensaje
         p.sub
-          | let us know how we can help
+          | dinos cómo te podemos ayudar
         p.size-2x
-          | Shoot us an email&nbsp;
-          a(href='mailto:contact@nfnto.com?subject=Let\'s work together', title='Contact us') contact(at)nfnto.com
+          | Envía un mail a&nbsp;
+          a(href='mailto:contact@nfnto.com?subject=Let\'s work together', title='Contact us') contacto@nfnto.com
+    hr  
+    .row
+      .col.text-center
+        h3 Ubicaciones
+    .row
+      .col.location
+        img(src='/svg/icons/locations/mexico.svg', alt='Ciudad de México, México', width='100%')
+        p.text-center Ciudad de México
+      .col.location
+        img(src='/svg/icons/locations/san-francisco.svg', alt='San Francisco, California', width='100%')
+        p.text-center San Francisco
+      .col.location
+        img(src='/svg/icons/locations/barcelona.svg', alt='Barcelona, España', width='100%')
+        p.text-center Barcelona
