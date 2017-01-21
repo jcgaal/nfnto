@@ -123,4 +123,4 @@ var sitemap = map({
 sitemap.generate(app); // generate sitemap from express route, you can set generate inside sitemap({})
 
 sitemap.XMLtoFile('public/sitemap.xml'); // write this map to file in public folder
-//console.log('sitemap generated');
+console.log('sitemap generated');
