@@ -100,3 +100,27 @@ app.use(function (err, req, res, next) {
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
+
+app.all('/all', function(req, res) {
+  res.send('hello /all');
+});
+
+/*
+* Express Site Map Generate everytime starts up
+*/
+var map = require('express-sitemap'); // use require('express-sitemap') instead
+
+var sitemap = map({
+  sitemap: 'sitemap.xml', // path for .XMLtoFile
+  route: {
+    'ALL': {
+      lastmod: '2016-01-20',
+      changefreq: 'monthly',
+      priority: 1.0,
+    }
+  },
+});
+sitemap.generate(app); // generate sitemap from express route, you can set generate inside sitemap({})
+
+sitemap.XMLtoFile('public/sitemap.xml'); // write this map to file in public folder
+//console.log('sitemap generated');
