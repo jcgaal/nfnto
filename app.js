@@ -101,10 +101,6 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
 
-app.all('/all', function(req, res) {
-  res.send('hello /all');
-});
-
 /*
 * Express Site Map Generate everytime starts up
 */
@@ -113,7 +109,7 @@ var map = require('express-sitemap'); // use require('express-sitemap') instead
 var sitemap = map({
   sitemap: 'sitemap.xml', // path for .XMLtoFile
   route: {
-    'http://nfnto.com/': {
+    'ALL': {
       lastmod: '2016-01-20',
       changefreq: 'monthly',
       priority: 1.0,
