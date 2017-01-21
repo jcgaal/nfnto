@@ -37,6 +37,16 @@ app.get('/work', function (req, res) {
 app.get('/contact', function (req, res) {
   res.render('contact')
 })
+//English Redirects
+app.get('/marketing-strategy', function (req, res) {
+  res.redirect('/solutions/marketing-strategy')
+})
+app.get('/experience-design', function (req, res) {
+  res.redirect('/solutions/experience-design')
+})
+app.get('/solutions/contact', function (req, res) {
+  res.redirect('/contact')
+})
 /*
 * Spanish Site
 */
@@ -65,6 +75,16 @@ app.get('/es/portafolio', function (req, res) {
 })
 app.get('/es/contacto', function (req, res) {
   res.render('es/contacto')
+})
+//Spanish Redirects
+app.get('/es/estrategia-de-marketing/', function (req, res) {
+  res.redirect('/es/soluciones/estrategia-de-marketing')
+})
+app.get('/es/experiencia-de-usuario', function (req, res) {
+  res.redirect('/es/soluciones/experiencia-de-usuario')
+})
+app.get('/es/soluciones/contacto', function (req, res) {
+  res.redirect('/es/contacto')
 })
 
 //404
