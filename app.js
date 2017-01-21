@@ -110,6 +110,7 @@ var sitemap = map({
   sitemap: 'sitemap.xml', // path for .XMLtoFile
   route: {
     'ALL': {
+      url: 'nfnto.com',
       lastmod: '2016-01-20',
       changefreq: 'monthly',
       priority: 1.0,
