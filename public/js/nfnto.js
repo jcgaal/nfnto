@@ -103,7 +103,7 @@ function _changeText() {
 setInterval("_changeText()", 1000);
 
 //Swap Words Dynamically Spanish
-var palabras = ["crecer tu negocio","llegar a tus clientes", "deleitar a tus usuarios", "aumentar ventas", "llegar a tus metas", "incrementar conocimiento de marca"];
+var palabras = ["llegar a tus clientes", "deleitar a tus usuarios", "aumentar ventas", "llegar a tus metas", "incrementar conocimiento de marca"];
 var a = 0;
 var texto = "ayudarán a";
 function _getTextoCambiado() {

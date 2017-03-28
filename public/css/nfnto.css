@@ -621,7 +621,7 @@ div.cs-skin-underline ul span::before {
 }
 .special-title{ font-size: 1.7em;}
 .you {
-  font-family: "quicksandbold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "quicksandbold", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: bolder;
 }
 .solutions-h1 {
@@ -1334,6 +1334,9 @@ div.cs-skin-underline ul span::before {
   width: 100%;
   /*max-height: 430px;*/
   height: auto;
+}
+.col.h-pad-2.media-comp {
+  margin-bottom: 20px;
 }
 .media-comp{
   margin-bottom: 15px;
