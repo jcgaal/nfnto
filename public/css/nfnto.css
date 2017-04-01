@@ -130,10 +130,11 @@ hr{
 }
 .hamburger{
   display:none;
-  width: 70px;
+  max-width: 55px;
+  width: 100%;
   float: right;
-  right: 20%;
-  top: 5px;
+  right: 25%;
+  top: 10px;
   position: relative;
 }
 a#menuham{
@@ -187,7 +188,7 @@ a#menuham.active{
       top: 0;
       left: 0;
       right: 0;
-      z-index: 1;
+      z-index: 1000;
       padding: 0.5em 3em 0 2em;
       box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
@@ -224,6 +225,17 @@ a#menuham.active{
     }
     .copy{
       text-align:center;
+    }
+    .footer-social{
+      text-align: center;
+    }
+    .footer-social > .list-inline li{
+      margin-right: 0;
+      margin-left: 5%;
+    }
+    /* Aboout mobile */
+    .modem{
+      padding: 1em 1em !important;
     }
 }
 /*
@@ -1534,6 +1546,9 @@ div.cs-skin-underline ul span::before {
   bottom: 0;
   left: 0;
   border-top: 1px solid #eeeeee;
+}
+.footer-social{
+  text-align: right;
 }
 footer p{
   font-size: 0.8em;
