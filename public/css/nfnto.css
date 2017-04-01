@@ -60,6 +60,9 @@ hr{
   .content { padding: 0px 8em 0 8em; }
   .row { width: 100%; display: table; table-layout: fixed; }
   .col { display: table-cell; }
+  .intro h1 {
+    font-size: 4em !important;
+  }
 }
 .list-inline {
   padding-left: 0;
@@ -86,6 +89,16 @@ hr{
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.hidden{
+  display: none;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.show{
+  display: block;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
 }
 /*
 * Header
@@ -115,6 +128,33 @@ hr{
 .masthead-title {
   float: left;
 }
+.hamburger{
+  display:none;
+  width: 70px;
+  float: right;
+  right: 20%;
+  top: 5px;
+  position: relative;
+}
+a#menuham{
+  display: block;
+  padding: 12px;
+  border-radius: 40px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+a#menuham.active{
+  border: 3px solid #B7585A;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.navbar{
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
 .nav {
   font: 24px/1.7 "neutra-bold", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   padding: 1em 0;
@@ -131,6 +171,60 @@ hr{
 }
 .lang-flag{
   margin-bottom: -10px;
+}
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .masthead{
+      min-height: 95px;
+      position: fixed;
+      background-color: #eee;
+      width: 100%;
+      display: block;
+      margin: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      padding: 0.5em 3em 0 2em;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    .masthead-title{
+      margin-left: -10%;
+    }
+    .hamburger{
+      display: block;
+    }
+    .navbar{
+
+    }
+    .nav {
+      width: 85%;
+      margin-top: 20%;
+    }
+    .nav li {
+      display: block;
+    }
+    .nav li a {
+      font-size: 1.6em;
+    }
+    .lang-flag{
+      width: 60px;
+    }
+    .main-container{
+      padding-top: 35%;
+    }
+    .hidden-sm{
+      display: none;
+    }
+    .show-sm{
+      display: block;
+    }
+    .copy{
+      text-align:center;
+    }
 }
 /*
 * General Styles
@@ -355,7 +449,7 @@ blockquote::before{
   height: 100%;
 }
 .intro h1 {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1;
   margin: 0.6em 0 0 0;
 }
@@ -481,7 +575,7 @@ div.cs-skin-underline {
   }
 }
 div.cs-skin-underline > span {
-  padding: 1em 2em 0em 1em;
+  padding: 25px 0px;
   border-bottom: 3px solid #000;
   border-color: inherit;
   font-size: 0.8em;

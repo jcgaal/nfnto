@@ -1,8 +1,8 @@
 - var today = new Date();
 - var year = today.getFullYear();
 footer.row
-  .col
-    p.text-left nfnto&copy; #{year}
+  .col.copy
+    p nfnto&copy; #{year}
   .col.text-right
     ul.list-inline
       li
@@ -25,7 +25,3 @@ footer.row
 block scripts
 
 script(src='/js/nfnto.min.js')
-
-// Start of HubSpot Embed Code
-script#hs-script-loader(type='text/javascript', async='', defer='', src='//js.hs-scripts.com/3041259.js')
-// End of HubSpot Embed Code

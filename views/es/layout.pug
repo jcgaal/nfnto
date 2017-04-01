@@ -9,7 +9,7 @@ html
     block title
 
 
-    link(rel='stylesheet', href='/css/nfnto.min.css')
+    link(rel='stylesheet', href='/css/nfnto.css')
 
     //G Analytics
     script.
@@ -31,7 +31,10 @@ html
           polygon.logo-left(points='78.859,0 0,136.232 12.723,160.238 78.859,44.971 119.29,112.208 142.392,112.269 ')
           polygon.logo-right(points='144.059,115.213 78.859,0 105.385,0 183.604,136.752 54.973,136.752 67.576,115.228 ')
           polygon.logo-center(points='91.73,72.995 69.557,112.227 115.077,112.227 ')
-    nav.navbar
+    div.hamburger
+      a#menuham(href='#', onclick='meatymenu(this)', class="normal")
+        img(src='/svg/icons/menu.svg')
+    nav#navigation.navbar.hidden
       ul.nav
         li
           a(href='/es/acerca/') acerca de
@@ -47,7 +50,7 @@ html
           a(href= urlen)
             img(src='/svg/icons/ingles-alt.svg', width='40', alt='Inglés', title='Inglés' class='lang-flag')
 
-  .container
+  .container.main-container
       block content
 
   include footer.pug

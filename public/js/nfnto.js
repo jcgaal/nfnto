@@ -1,8 +1,10 @@
+
 (function() {
   [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
     new SelectFx(el);
   } );
 })();
+//Menu  Home page
 function reply_click(clicked_id){
   switch (clicked_id) {
     case "1":
@@ -62,6 +64,19 @@ function reply_click(clicked_id){
       return true;
       break;
     default:
+  }
+}
+
+//Hamburger menu
+function meatymenu(div) {
+  var className  = div.getAttribute("class");
+  if(className=="normal") {
+    div.className  = "active";
+    document.getElementById("navigation").className = "show";
+  }
+  else{
+    div.className  = "normal";
+    document.getElementById("navigation").className = "hidden";
   }
 }
 
