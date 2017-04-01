@@ -96,7 +96,7 @@ hr{
           transition: all 0.3s;
 }
 .show{
-  display: block;
+  display: block !important;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
 }
@@ -198,7 +198,7 @@ a#menuham.active{
       display: block;
     }
     .navbar{
-
+      display: none;
     }
     .nav {
       width: 85%;
