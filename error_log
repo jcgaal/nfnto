@@ -1,0 +1,4 @@
+[22-Jan-2021 22:57:27 UTC] PHP Warning:  include(logo-wht.svg): failed to open stream: No such file or directory in /home/t3vbcadkt1qg/public_html/nfnto.com/index.php on line 82
+[22-Jan-2021 22:57:27 UTC] PHP Warning:  include(): Failed opening 'logo-wht.svg' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/t3vbcadkt1qg/public_html/nfnto.com/index.php on line 82
+[22-Jan-2021 22:57:42 UTC] PHP Warning:  include(images/logo-wht.svg): failed to open stream: No such file or directory in /home/t3vbcadkt1qg/public_html/nfnto.com/index.php on line 82
+[22-Jan-2021 22:57:42 UTC] PHP Warning:  include(): Failed opening 'images/logo-wht.svg' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/t3vbcadkt1qg/public_html/nfnto.com/index.php on line 82
